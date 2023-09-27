@@ -6,13 +6,12 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
   const CARDS = 10;
   const MAX_VISIBILITY = 3;
 
-  console.log(count);
 
   return (
-    <div className="carousel">
+    <div className="relative w-538 h-614 perspective-500 transform-style-preserve-3d">
       {active > 0 && (
         <button
-          className="nav left-nav-carousel"
+          className="text-black text-5xl absolute flex items-center justify-center top-1/2 z-2 cursor-pointer select-none bg-transparent border-none transform translate-x-[-120%] translate-y-[-50%]"
           onClick={() => setActive((i) => i - 1)}
         >
           <svg
@@ -32,7 +31,12 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
       )}
       {React.Children.map(children, (child, i) => (
         <div
-          className="card-container"
+          className="absolute w-full h-full transform
+          rotate-y calc(var(--offset) * 50deg)
+          scale-y calc(1 + var(--abs-offset) * -0.4)
+          translate-z calc(var(--abs-offset) * -30rem)
+          translate-x calc(var(--direction) * -5rem)
+          transition-all duration-300 ease-out"
           style={{
             //@ts-ignore
             "--active": i === active ? 1 : 0,
@@ -49,7 +53,7 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
       ))}
       {active < count - 1 && (
         <button
-          className="nav right-nav-carousel"
+          className="text-black text-5xl absolute flex items-center justify-center top-1/2 z-2 cursor-pointer select-none bg-transparent border-none right-0 transform translate-x-[120%] translate-y-[-50%]"
           onClick={() => setActive((i) => i + 1)}
         >
           <svg

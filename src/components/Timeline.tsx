@@ -469,7 +469,7 @@ function GradientCard({
   footer: React.ReactNode;
 }) {
   return (
-    <div className="timeline-gradientcard-gradient rounded-2xl p-10">
+    <div className="bg-gradient-to-r from-black via-gray-600 to-gray-300 shadow-lg rounded-2xl p-10">
       <div className="flex items-center justify-between">
         <Image
           src="https://s3-alpha-sig.figma.com/img/9d6d/cfc1/fb8cd40116ca161e463af1ee400a729e?Expires=1694995200&Signature=h1x8zYIEcksM6fh5RDvQ4ECeihTfQdeHloWbzDadukMpZBhws9lPBpMFh-9XIsh2k3CKZCczKPLoIxMJ89vpq8As2DCiADJsSbOXBta1gsOFEXhmuZIO638pHgvaiGW-T-tD4RQEWmWp9Q~rhQYxDM7EuRFbVF6nim-zphAKrdfJXTsqypezfRZonQvppbMt35BOVo81-yGeDBtfmg1FJln3jr-AwlpSa95SZHA4~M4nd-FcwqDG00g5NDx~koYZpLylO-J2UTHAlxnHN6QGkuVfhCmGTvCOb9gAo9Nrp-Hw9Vsgz6gYT8WQYKeIP-3TWBZnTLX5mFgaiCfEks2u4Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"

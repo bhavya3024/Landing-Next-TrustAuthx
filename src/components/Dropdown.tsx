@@ -13,7 +13,7 @@ export function AccountDropdown() {
   return (
     //dropdown needs to be wrapped in dialog for the trigger to work
     <div>
-      <div className=" showcase-9-dropdown-shadow mt-2 w-96 max-w-[80vw] cursor-pointer overflow-hidden rounded-2xl bg-white py-6">
+      <div className=" shadow-md mt-2 w-96 max-w-[80vw] cursor-pointer overflow-hidden rounded-2xl bg-white py-6">
         <div className="sticky top-0 flex items-center gap-1 bg-white px-6 pb-4">
           <Image
             src="https://github.com/shadcn.png"

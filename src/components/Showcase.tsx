@@ -51,7 +51,7 @@ function Showcase() {
               set static or use as carousel.
             </div>
           }
-          className="showcase-1  w-full  "
+          className="bg-gradient-to-r from-blue-600 via-green-500 to-transparent  w-full  "
         >
           <div className="relative  mt-10 flex h-[300px] w-full items-center justify-center bg-transparent ">
             <Image
@@ -159,7 +159,7 @@ function Showcase() {
                 private-hosting
               </div>
             }
-            className="showcase-4    col-span-full lg:col-span-4  "
+            className="bg-gradient-to-r from-blue-600 via-cyan-300 to-transparent shadow-xl col-span-full lg:col-span-4  "
           >
             <div
               className="showcase-3-width relative mx-4 flex h-[340px] 
@@ -341,7 +341,7 @@ function Showcase() {
               "   showcase-6-shadow relative col-span-full w-full overflow-hidden rounded-[20px]   lg:col-span-6"
             }
           >
-            <div className="showcase-6 flex flex-col gap-2 rounded-none p-8   ">
+            <div className="bg-gradient-to-l from-purple-600 via-pink-500 to-transparent bg-fixed bg-cover flex flex-col gap-2 rounded-none p-8   ">
               <div className="   text-2xl font-normal leading-7 text-white">
                 Multi-Tenant-Accounts
               </div>
@@ -466,7 +466,7 @@ function Showcase() {
                 We make sure your site looks great & Works great
               </div>
             }
-            className="  showcase-9 col-span-full w-full lg:col-span-6  "
+            className="  bg-gradient-to-l from-blue-400 to-indigo-900 shadow-xl col-span-full w-full lg:col-span-6  "
           >
             <div className=" absolute left-1/2 z-10 -translate-x-1/2 scale-90 sm:right-1/3">
               <AccountDropdown />

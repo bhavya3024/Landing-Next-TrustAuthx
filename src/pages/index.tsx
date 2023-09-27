@@ -8,6 +8,14 @@ import LandingHero from "../components/LandingHero";
 import React from "react";
 import AiInCLI from "../components/AiInCLI";
 import Navbar from "../components/Navbar";
+import { Profiler } from 'react';
+
+// function onRender(id, phase, actualDuration, baseDuration, startTime, commitTime) {
+//   // Aggregate or log render timings...
+//   console.table({
+//     id, phase, actualDuration, baseDuration, startTime, commitTime
+//   });
+// }
 
 export default function LandingPage() {
   return (
